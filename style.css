@@ -7,9 +7,12 @@
 
 /* Body */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
+font-family: 'Aileron', sans-serif;
+            font-size: 12pt;
+            color: black;
+            margin: 0;
+            padding: 0px;
+            width: auto;}
 
 /* Header */
 header {
@@ -24,6 +27,12 @@ header {
                 padding-left: 31.313px;
                 padding-right: 62.638px;
   }
+
+.header-image {
+            height: 200px;
+            background: white; /* Placeholder for header image */
+        }
+
 
 .logo {
   width: 250px;
@@ -43,6 +52,11 @@ header {
   color: black;
   text-decoration: none;
 }
+
+.nav-links a:hover {
+            decoration: underline;
+        }
+
 
 /* Hamburger menu (hidden by default) */
 .hamburger {
@@ -111,6 +125,11 @@ header {
   border: none;
   cursor: pointer;
 }
+
+img {
+            height: 400px;
+            width: 400px;            
+        }
 
 footer {
             background: #f4f4f4;
