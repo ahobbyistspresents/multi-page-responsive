@@ -22,8 +22,8 @@ header {
 }
 
 .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+  width: 250px;
+  height: 125px;
 }
 
 .nav-links {
