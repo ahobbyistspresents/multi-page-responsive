@@ -14,10 +14,86 @@
     <div id="header-placeholder"></div>
 
     <main>
-        <section class="hero">
-            <h1>Find the Perfect Gift for Cyclists & Guitarists</h1>
-            <p>Browse our curated selection of gifts designed for cycling and guitar enthusiasts.</p>
-        </section>
+        <div class="hero-text" style="background-color:rgba(240, 195, 16,1); margin-left: 42px;margin-right: 42px;">
+            <h1>Giftware for Passionate People</h1>
+            <h2>Thoughtfully designed gifts people love to give, and enthusiasts love to get</h2>
+        </div>
+        <div class="container">
+        <div class="half-container" style="padding-left; 25px">
+            <h2>A Cyclist's Presents</h2>
+            <a href="acp-cycling-gifts.html"><img src="Pedalling_Truths.png" alt="Cycling Products"></a>
+            <button onclick="location.href='acp-cycling-gifts.html'">Check out ACP's gifts for cyclists</button>
+        </div>
+        <div class="half-container" style="padding-right; 25px">
+            <h2>A Guitarist's Presents</h2>
+            <a href="agp-guitar-gifts.html"><img src="GTT_True_or_False.png" alt="Guitar Products"></a>
+            <button onclick="location.href='agp-guitar-gifts.html'">Check out AGP's gifts for guitarists</button>
+        </div>
+    </div>
+
+    <div class="container" id="about" style="background-image: url('about.png');">
+        <h2 style="width: 100%;"><u>About AHP</u></h2>
+        <div class="split-container" style="background-color: rgba(255, 255, 255, .75);padding-left: 25px;padding-top: 25px;padding-bottom: 25px;padding-right: 25px;">
+            <div style="padding-right: 100px;">
+                <p>Design, data, and fun drive product development.</p>
+                <p>Eoghan McHugh, a cycling and guitar enthusiast, started ACP in 2023 and AGP in 2024 to create giftware for cyclists and guitarists.</p>
+                <p>Each product answers four key questions:
+                    <ol>
+                        <li>Is it clear to the customer what the product is about?</li>
+                        <li>Is the design and quality gift-worthy?</li>
+                        <li>Will the recipient enjoy the product?</li>
+                        <li>Will the recipient get something from their gift?</li>
+                    </ol>
+                Every item is crafted with these principles, ensuring thoughtful, well-designed gifts for cyclists and guitarists alike.</p>
+            </div>
+            <!--- <div>
+                <center><img src="about-image.jpg" alt="About AHP"></center>
+            </div> --->
+        </div>
+    </div>
+
+    <div class="container" id="collaborate" style="background-image: url('collaborate.png');">
+        <h2 style="width: 100%;"><u>Let's Collaborate</u></h2>
+        <div class="split-container" style="background-color: rgba(255, 255, 255, .75);padding-left: 25px;padding-right: 25px">
+            <div style="padding-right: 100px;">
+                <p>Bikes and guitars aren't the only hobbies worth obsessing over.</p>
+                <p>But bikes and guitars are what keep me up at night.</p>
+                <p>Got a hobby that you're passionate about? Send me an email. We can find a way to collaborate to bring your idea to life.</p>
+            </div>
+            <div>
+                <center><button onclick="location.href='#contact'">
+Get in touch to collaborate</button></center>
+            </div>
+        </div>
+    </div>
+
+<div class="container" id="contact">
+    <h2 style="width: 100%;"><u>Contact</u></h2>
+<form id="contactForm" style="width:100%;">
+  <input type="text" name="First name" placeholder="First Name" required>
+  <input type="text" name="Last name" placeholder="Last Name" required>
+  <input type="email" name="Email" placeholder="Email" required>
+  <textarea name="Message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    var formData = new FormData(this);
+    var url = "https://script.google.com/macros/s/AKfycbxPX5pKtxIBjE0tEADmFe5nHkf34hilngjv3y7bd-znkzTHEaEWHbM43gpzIRD_DV86/exec"; // Replace with your actual web app URL
+
+    fetch(url, {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => alert("Message Sent!"))
+    .catch(error => alert("Error! " + error));
+  });
+</script>
+</div>
     </main>
 
     <!-- Load Footer -->
