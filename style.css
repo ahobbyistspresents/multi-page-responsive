@@ -158,7 +158,7 @@ button {
 
 .inline-buttons {
   display: flex;
-  gap: 10px;
+  gap: 40px;
 }
 
 .inline-buttons button {
