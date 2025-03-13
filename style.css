@@ -5,6 +5,25 @@
   box-sizing: border-box;
 }
 
+a:link{
+  color:blue;
+}
+a:visited{
+  color:purple;
+}
+a:hover{
+  color:orange;
+}
+a:focus{
+  color:green;
+}
+a:active{
+  color:red;
+}
+
+
+
+
 /* Body */
 body {
 font-family: 'Aileron', sans-serif;
