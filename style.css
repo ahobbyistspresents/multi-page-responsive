@@ -6,13 +6,13 @@
 }
 
 a:link{
-  color:blue;
+  color:black;
 }
 a:visited{
-  color:purple;
+  color:black;
 }
 a:hover{
-  color:orange;
+  color:yellow;
 }
 a:focus{
   color:green;
