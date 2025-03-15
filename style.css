@@ -54,8 +54,9 @@ header {
         }
 
 .logo {
-  width: 200px;
-  height: 125px;
+  width: 150px;
+  height: 90px;
+  margin-top: 15px;
 }
 
 .nav-links {
